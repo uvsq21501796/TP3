@@ -1,13 +1,8 @@
 package Grp3;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class MyUnit {
+
+    public String concatenate(String one, String two){
+        return one + two;
     }
 }
