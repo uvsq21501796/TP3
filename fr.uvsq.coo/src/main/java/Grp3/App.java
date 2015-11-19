@@ -1,8 +1,13 @@
 package Grp3;
 
-public class MyUnit {
-
-    public String concatenate(String one, String two){
-        return one + two;
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
     }
 }
