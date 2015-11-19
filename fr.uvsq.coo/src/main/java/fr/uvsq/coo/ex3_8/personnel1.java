@@ -9,10 +9,14 @@ import java.util.StringJoiner;
 
 public class personnel1 {
 	
+	
+
+
+
 	private final String nom;
 	private final String prenom;
 	private final Date date;
-	public List<String> Tel;
+	public ArrayList<Integer> Tel = new ArrayList<Integer>();
 	public String Fonct;
 	
 
@@ -42,7 +46,13 @@ public class personnel1 {
 			Fonct = fonct;
 			return this;
 		}
-	}
 		
+		public personnel1 build(){
+			return new personnel1(this);
+		}
+	}
+	public personnel1(Builder builder) {
+		// TODO Auto-generated constructor stub
+	}
 		
 	}
