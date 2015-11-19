@@ -1,6 +1,7 @@
 package fr.uvsq.coo.ex3_8;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -8,45 +9,40 @@ import java.util.StringJoiner;
 
 public class personnel1 {
 	
-	private String nom;
-	private String prenom;
-	private Date date;
-	private ArrayList<> Tel;
- 	public fonction fonct;
+	private final String nom;
+	private final String prenom;
+	private final Date date;
+	public List<String> Tel;
+	public String Fonct;
+	
+
 	
 	public static class Builder
 	{
-		private String nom = "EL FACHTALI";
-		private String prenom = "Aiman";
-		private Date date;
- 		private String fonction;
-		public fonction fonct;
+		private final String nom;
+		private final String prenom;
+		private final Date date;
+		public ArrayList<String> Tel = new ArrayList<String>();
+		public String Fonct;
 		
-		public Builder Nom(String N) {
-			nom = N;
-			return this;
-		}
-		public Builder Prenom(String P) {
-			prenom = P;
-			return this;	
-		}
-		public Builder(Date date) {
-			super();
+		public Builder(String nom, String prenom, Date date){
+			this.nom = nom;
+			this.prenom=prenom;
 			this.date = date;
 		}
-		public Builder(fr.uvsq.coo.ex3_8.fonction fonct) {
-			super();
-			this.fonct = fonct;
+
+		public Builder Tel(ArrayList tel)
+		{
+			Tel = tel;
+			return this;
 		}
+		
+		public Builder Fonct(String fonct)
+		{
+			Fonct = fonct;
+			return this;
+		}
+	}
 		
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-
-}
